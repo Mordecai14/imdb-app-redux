@@ -1,49 +1,47 @@
-import { makeStyles } from '@material-ui/styles'
+import { makeStyles } from "@material-ui/styles";
 
 const centeredStyleObj = {
-    display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center'
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
 };
 
 export default makeStyles({
+  container: {
+    ...centeredStyleObj,
+    height: "100vh",
+    flexDirection: "column",
+  },
 
-    container: {
-        ...centeredStyleObj,
-        height: '100vh',
-        flexDirection: 'column'
-    },
+  cardContainer: {
+    ...centeredStyleObj,
+    flexDirection: "column",
+    height: 200,
+    padding: "2rem",
+    width: 400,
+  },
 
-    cardContainer: {
-        ...centeredStyleObj,
-        flexDirection: 'column',
-        height: 200,
-        padding: '2rem',
-        width: 400
-    },
+  title: {
+    fontSize: "3rem",
+  },
 
-    title: {
-        fontSize: '4rem'
-    },
+  titleGridContainer: {
+    ...centeredStyleObj,
+  },
 
-    titleGridContainer: {
-        ...centeredStyleObj
-    },
+  textFieldSearch: {
+    width: "90%",
+  },
 
-    textFieldSearch: {
-        width: '90%'
-    },
+  searchButton: {
+    marginLeft: ".5rem",
+  },
 
-    searchButton: {
-        marginLeft: '.5rem'
-    },
+  buttonscontainer: {
+    marginTop: ".5rem",
+  },
 
-    buttonscontainer: {
-        marginTop: '.5rem'
-    },
-
-    movieIcon: {
-        fontSize: '4rem'
-    }
-
+  movieIcon: {
+    fontSize: "4rem",
+  },
 });
